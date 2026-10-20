@@ -1,0 +1,686 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Portofolio David Kurniawan Handoko</title>
+
+    <!-- Bootstrap 5.3.8 -->
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css" />
+
+    <style>
+      body {
+        background-color: #faf0e3;
+        color: #5c4033;
+        padding-top: 80px;
+      }
+
+      .navbar {
+        background-color: #e8c99b;
+      }
+
+      .navbar-brand {
+        color: #5c4033;
+        font-weight: bold;
+      }
+
+      .navbar .nav-link {
+        color: #5c4033;
+        transition: 0.3s;
+      }
+
+      .navbar .nav-link:hover {
+        color: #9b5d35;
+        text-decoration: underline;
+      }
+
+      .judul {
+        color: #6b4226;
+        font-weight: bold;
+      }
+
+      .bagian {
+        background-color: #fff9f0;
+        border-radius: 12px;
+        padding: 25px;
+        margin-bottom: 25px;
+        box-shadow: 0 3px 10px rgba(92, 64, 51, 0.1);
+      }
+
+      .foto-profil {
+        width: 150px;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+
+      .audio-profil {
+        max-width: 100%;
+      }
+
+      .kartu-sertifikat {
+        background-color: white;
+        border: 1px solid #e8d3bd;
+        border-radius: 10px;
+        overflow: hidden;
+        height: 100%;
+        transition: 0.3s;
+      }
+
+      .kartu-sertifikat:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(92, 64, 51, 0.18);
+      }
+
+      .gambar-sertifikat {
+        width: 100%;
+        height: 220px;
+        object-fit: contain;
+        padding: 10px;
+        background-color: #f5e6d3;
+      }
+
+      .kartu-sertifikat h5 {
+        color: #6b4226;
+        text-align: center;
+        padding: 12px;
+      }
+
+      .tombol-cokelat {
+        background-color: #8b5e3c;
+        color: white;
+        border: none;
+      }
+
+      .tombol-cokelat:hover {
+        background-color: #6b4226;
+        color: white;
+      }
+
+      footer {
+        background-color: #6b4226;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 85px;
+      }
+
+      @media (max-width: 576px) {
+        .bagian {
+          padding: 18px;
+        }
+
+        .foto-profil {
+          width: 120px;
+          height: 150px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
+      <div class="container">
+        <a class="navbar-brand" href="#beranda">DavidKH</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menuNavbar"
+          aria-controls="menuNavbar"
+          aria-expanded="false"
+          aria-label="Buka menu navigasi"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menuNavbar">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#beranda">Beranda</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#profil">Profil</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#pendidikan">Pendidikan</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#keahlian">Keahlian & Hobi</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#pengalaman">Pengalaman</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#sertifikat">Sertifikat</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#kontak">Kontak</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container my-4">
+      <!-- Beranda -->
+      <section id="beranda" class="beranda py-5">
+        <div class="container">
+          <div class="row align-items-center g-4">
+            <!-- Bagian teks -->
+            <div class="col-md-7">
+              <p class="teks-pembuka mb-2">SELAMAT DATANG DI WEBSITE SAYA</p>
+
+              <h1 class="display-5 fw-bold mb-3">
+                Halo, Saya <span class="nama">David Kurniawan</span>
+              </h1>
+
+              <h5 class="text-secondary mb-3">Mahasiswa Sistem Informasi</h5>
+
+              <p class="deskripsi mb-4">
+                Selamat datang di portofolio pribadi saya. Di sini kamu dapat
+                mengenal profil, riwayat pendidikan, pengalaman, keahlian, dan
+                sertifikat yang saya miliki. Website ini juga menjadi tempat
+                saya menunjukkan proses belajar dan perkembangan di bidang
+                teknologi informasi.
+              </p>
+
+              <a href="#profil" class="btn btn-dark me-2 mb-2">
+                Tentang Saya
+              </a>
+
+              <a href="#sertifikat" class="btn btn-outline-dark mb-2">
+                Lihat Sertifikat
+              </a>
+            </div>
+
+            <!-- Bagian foto -->
+            <div class="col-md-5 text-center">
+              <div class="foto-beranda">
+                <img
+                  src="image/beranda.jpeg"
+                  alt="Foto David Kurniawan"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROFIL -->
+      <section id="profil" class="bagian">
+        <h2 class="judul mb-4">A. Profil Saya</h2>
+
+        <div class="row align-items-start g-4">
+          <div class="col-12 col-md-auto text-center">
+            <img
+              src="image/GANTENG.jpeg"
+              alt="Foto David Kurniawan Handoko"
+              class="foto-profil img-thumbnail"
+            />
+          </div>
+
+          <div class="col">
+            <p>
+              Halo! Saya David Kurniawan H., seorang mahasiswa Sistem Informasi
+              yang memiliki rasa ingin tahu tinggi terhadap dunia teknologi.
+              Saya tertarik mempelajari bagaimana sebuah ide dapat dikembangkan
+              menjadi website, aplikasi, atau sistem yang mampu membantu
+              menyelesaikan suatu permasalahan.
+            </p>
+
+            <p>
+              Saat ini saya sedang memperdalam berbagai kemampuan di bidang
+              pemrograman, basis data, dan analisis sistem. Setiap tugas dan
+              proyek perkuliahan saya jadikan kesempatan untuk mencoba, belajar
+              dari kesalahan, dan meningkatkan kemampuan.
+            </p>
+          </div>
+        </div>
+
+        <p class="mt-3">
+          Portofolio ini dibuat sebagai salah satu latihan untuk memahami
+          pengembangan web menggunakan HTML5 dan Bootstrap. Saya belajar
+          menyusun struktur halaman dan mengatur informasi agar mudah dipahami
+          oleh pengunjung.
+        </p>
+
+        <h5 class="judul mt-4">Perkenalan Audio</h5>
+
+        <audio controls class="audio-profil">
+          <source src="audio/voicehtml.mpeg" type="audio/mpeg" />
+          Browser kamu tidak mendukung pemutar audio.
+        </audio>
+      </section>
+
+      <!-- PENDIDIKAN -->
+      <section id="pendidikan" class="bagian">
+        <h2 class="judul mb-4">B. Riwayat Pendidikan</h2>
+
+        <div class="table-responsive">
+          <table
+            class="table table-bordered table-striped table-hover align-middle"
+          >
+            <thead class="table-warning">
+              <tr>
+                <th>No</th>
+                <th>Jenjang Pendidikan</th>
+                <th>Nama Sekolah/Universitas</th>
+                <th>Tahun</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>SD</td>
+                <td>
+                  <a
+                    href="https://sites.google.com/admin.sd.belajar.id/sd-kristen-dian-wacana/home?pli=1&authuser=0"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    SD Kristen Dian Wacana
+                  </a>
+                </td>
+                <td>2013–2019</td>
+              </tr>
+
+              <tr>
+                <td>2</td>
+                <td>SMP</td>
+                <td>
+                  <a
+                    href="https://terbang.sch.id/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    SMP Kristen Terang Bangsa
+                  </a>
+                </td>
+                <td>2019–2022</td>
+              </tr>
+
+              <tr>
+                <td>3</td>
+                <td>SMA</td>
+                <td>
+                  <a
+                    href="https://terbang.sch.id/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    SMA Kristen Terang Bangsa
+                  </a>
+                </td>
+                <td>2022–2025</td>
+              </tr>
+
+              <tr>
+                <td>4</td>
+                <td>Universitas</td>
+                <td>
+                  <a
+                    href="https://dinus.ac.id/id/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Universitas Dian Nuswantoro
+                  </a>
+                </td>
+                <td>2025–Sekarang</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- KEAHLIAN DAN HOBI -->
+      <section id="keahlian" class="bagian">
+        <h2 class="judul mb-4">C. Keahlian & Hobi</h2>
+
+        <div class="row g-4">
+          <div class="col-12 col-md-6">
+            <div class="card h-100">
+              <div
+                class="card-header text-white"
+                style="background-color: #8b5e3c"
+              >
+                <h4 class="mb-0">Keahlian</h4>
+              </div>
+
+              <div class="card-body">
+                <ul class="mb-0">
+                  <li>HTML Dasar</li>
+                  <li>Microsoft Word</li>
+                  <li>Microsoft PowerPoint</li>
+                  <li>Microsoft Excel Dasar</li>
+                  <li>Canva</li>
+                  <li>Komunikasi</li>
+                  <li>Kerja Sama Tim</li>
+                  <li>Problem Solving</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <div class="card h-100">
+              <div
+                class="card-header text-white"
+                style="background-color: #8b5e3c"
+              >
+                <h4 class="mb-0">Hobi</h4>
+              </div>
+
+              <div class="card-body">
+                <ul class="mb-0">
+                  <li>Bermain game</li>
+                  <li>Mendengarkan musik</li>
+                  <li>Berolahraga</li>
+                  <li>Belajar hal baru</li>
+                  <li>Eksplorasi alam bebas</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PENGALAMAN DAN ORGANISASI -->
+      <section id="pengalaman" class="bagian">
+        <h2 class="judul mb-4">D. Pengalaman & Organisasi</h2>
+
+        <div class="table-responsive">
+          <table class="table table-bordered table-hover align-middle">
+            <thead class="table-warning">
+              <tr>
+                <th>No</th>
+                <th>Kegiatan</th>
+                <th>Deskripsi</th>
+                <th>Tahun</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Tugas Pemrograman</td>
+                <td>Membuat halaman web menggunakan HTML.</td>
+                <td>2026</td>
+              </tr>
+
+              <tr>
+                <td>2</td>
+                <td>Proyek Kelompok</td>
+                <td>Mengerjakan proyek bersama dalam perkuliahan.</td>
+                <td>2026</td>
+              </tr>
+
+              <tr>
+                <td>3</td>
+                <td>Praktikum</td>
+                <td>Mempelajari dasar-dasar pengembangan web.</td>
+                <td>2026</td>
+              </tr>
+
+              <tr>
+                <td>4</td>
+                <td>Komting</td>
+                <td>Menjadi Komting Semester 1 dan Semester 2.</td>
+                <td>2026</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- SERTIFIKAT -->
+      <section id="sertifikat" class="bagian">
+        <h2 class="judul mb-3">E. Sertifikat</h2>
+
+        <p>Berikut adalah kumpulan sertifikat yang saya miliki.</p>
+
+        <div class="row g-4">
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="kartu-sertifikat">
+              <a
+                href="image/sertifikat%201.jpeg"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="image/sertifikat%201.jpeg"
+                  class="gambar-sertifikat"
+                  alt="Sertifikat 1"
+                />
+              </a>
+              <h5>Sertifikat 1</h5>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="kartu-sertifikat">
+              <a
+                href="image/sertifikat%202.jpeg"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="image/sertifikat%202.jpeg"
+                  class="gambar-sertifikat"
+                  alt="Sertifikat 2"
+                />
+              </a>
+              <h5>Sertifikat 2</h5>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="kartu-sertifikat">
+              <a
+                href="image/sertifikat%203.jpeg"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="image/sertifikat%203.jpeg"
+                  class="gambar-sertifikat"
+                  alt="Sertifikat 3"
+                />
+              </a>
+              <h5>Sertifikat 3</h5>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="kartu-sertifikat">
+              <a
+                href="image/sertifikat%204.png"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="image/sertifikat%204.png"
+                  class="gambar-sertifikat"
+                  alt="Sertifikat 4"
+                />
+              </a>
+              <h5>Sertifikat 4</h5>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- KONTAK -->
+      <section id="kontak" class="bagian">
+        <h2 class="judul mb-3">F. Kontak</h2>
+
+        <p>
+          Terima kasih sudah mengunjungi portofolio saya. Jika ingin berdiskusi,
+          bertukar informasi, atau sekadar menyapa, silakan hubungi saya melalui
+          kontak berikut.
+        </p>
+
+        <div class="table-responsive">
+          <table class="table table-bordered align-middle">
+            <thead class="table-warning">
+              <tr>
+                <th>Kontak</th>
+                <th>Informasi</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Email</td>
+                <td>
+                  <a
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=davidkhh10@gmail.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Hubungi Email Saya
+                  </a>
+                </td>
+              </tr>
+
+              <tr>
+                <td>WhatsApp</td>
+                <td>
+                  <a
+                    href="https://wa.me/628882542294"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Chat melalui WhatsApp
+                  </a>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Instagram</td>
+                <td>
+                  <a
+                    href="https://www.instagram.com/invites/contact/?utm_source=ig_contact_invite&utm_medium=copy_link&utm_content=e53fwp8"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Kunjungi Instagram Saya
+                  </a>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Domisili</td>
+                <td>
+                  <a
+                    href="https://maps.app.goo.gl/N7Kc6kyakhw3qWb99"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Semarang Tengah, Jawa Tengah
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h4 class="judul mt-4">Form Saran</h4>
+
+        <form
+          onsubmit="
+            event.preventDefault();
+            alert('Terima kasih atas sarannya!');
+          "
+        >
+          <div class="mb-3">
+            <label for="nama" class="form-label">Nama</label>
+            <input
+              type="text"
+              class="form-control"
+              id="nama"
+              placeholder="Masukkan nama kamu"
+              required
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="saran" class="form-label">Saran atau Pesan</label>
+            <textarea
+              class="form-control"
+              id="saran"
+              rows="4"
+              placeholder="Tulis saran kamu di sini..."
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn tombol-cokelat">Kirim Saran</button>
+        </form>
+
+        <p class="mt-4">
+          <strong>Terhubung dengan saya:</strong>
+        </p>
+
+        <div class="d-flex flex-wrap gap-2">
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=davidkhh10@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn tombol-cokelat"
+            >Email</a
+          >
+
+          <a
+            href="https://wa.me/628882542294"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn tombol-cokelat"
+            >WhatsApp</a
+          >
+
+          <a
+            href="https://www.instagram.com/invites/contact/?utm_source=ig_contact_invite&utm_medium=copy_link&utm_content=e53fwp8"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn tombol-cokelat"
+            >Instagram</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <p class="mb-2">
+        <em
+          >"Setiap baris kode adalah satu langkah menuju kemampuan yang lebih
+          baik."</em
+        >
+      </p>
+
+      <small>
+        &copy; 2026 David Kurniawan Handoko. Dibuat dengan HTML dan Bootstrap.
+      </small>
+    </footer>
+
+    <!-- JavaScript Bootstrap -->
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
